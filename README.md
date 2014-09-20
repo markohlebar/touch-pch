@@ -1,4 +1,4 @@
-touch_pch
+touch-pch
 =========
 
 Touch your .pch files recursively.
@@ -11,4 +11,4 @@ this script makes life a bit easier.
 
 ##Usage 
 
-ruby touch_pch.rb [XCODE_PROJECT_DIR]
+ruby touch-pch.rb [XCODE_PROJECT_DIR]
