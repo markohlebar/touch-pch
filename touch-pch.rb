@@ -1,10 +1,6 @@
 #!/usr/bin/ruby
 
 def touch_pch_recursive(directory_path)
-	if directory_path == nil
-		return
-	end
-    
 	Dir.foreach(directory_path) do |item|
 		if item == "." or item == ".."
 			next
@@ -23,4 +19,9 @@ def touch_pch_recursive(directory_path)
 end
 
 directory_path = ARGV[0]
+if directory_path == nil
+    puts "Usage: ruby touch-pch.rb [XCODE_PROJ_DIR]"
+    exit
+end
+
 touch_pch_recursive(directory_path)
